@@ -1,0 +1,7 @@
+.wrapper_modal {
+  padding: 2.5rem;
+
+  @include tablet {
+    padding: 6rem;
+  }
+}
