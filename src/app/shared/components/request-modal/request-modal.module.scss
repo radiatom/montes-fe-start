@@ -1,0 +1,29 @@
+.request_modal {
+  &__title {
+    margin-bottom: 2rem;
+
+    @include tablet {
+      margin-bottom: 4.8rem;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 2rem;
+
+    @include tablet {
+      grid-gap: 4.8rem;
+    }
+
+    @include laptop {
+      max-width: 42rem;
+    }
+  }
+
+  &__label {
+    & span {
+      color: red;
+    }
+  }
+}

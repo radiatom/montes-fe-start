@@ -1,0 +1,7 @@
+public
+package.json
+yarn.lock
+ecosystem.config.js
+next.config.mjs
+src/app/graphql
+src/app/shared/validations

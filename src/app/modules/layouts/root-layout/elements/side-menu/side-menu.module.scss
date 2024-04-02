@@ -1,0 +1,48 @@
+.side_menu {
+  width: 100vw;
+  height: 100vh;
+  padding: 2.4rem 2.4rem 0;
+  display: grid;
+  align-items: start;
+  grid-template-rows: auto 1fr;
+  grid-gap: var(--gap-medium);
+
+  background-color: var(--bg-color-primary);
+  color: var(--font-color-grey-dark);
+
+  &__header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+
+    color: var(--font-color-orange);
+  }
+
+  &__logo {
+    position: relative;
+    height: 4rem;
+    aspect-ratio: 3.3/1;
+  }
+
+  &__nav {
+    display: grid;
+    grid-gap: var(--gap-medium);
+    font-size: 2rem;
+    font-weight: 700;
+
+    &__item {
+      color: var(--font-color-dark-grey);
+      line-height: 1.8rem;
+      text-transform: uppercase;
+      transition: var(--transition);
+
+      &__active {
+        color: var(--font-color-bright-red);
+      }
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+  }
+}

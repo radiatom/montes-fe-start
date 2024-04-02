@@ -1,0 +1,13 @@
+.scroll_tot_top {
+  position: fixed;
+  overflow: hidden;
+  bottom: 20px;
+  right: 2rem;
+  transform: translate(-100%, 0);
+  transition: transform 0.25s ease-in-out;
+  z-index: 9;
+
+  @include tablet {
+    right: 5%;
+  }
+}

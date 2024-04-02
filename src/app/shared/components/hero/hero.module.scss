@@ -1,0 +1,64 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 3rem;
+
+  @include tablet {
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+  }
+
+  &__main {
+    grid-row: 2/3;
+    display: grid;
+    align-content: center;
+
+    @include tablet {
+      grid-row: 1/1;
+    }
+
+    &__title {
+      margin-bottom: 1.6rem;
+      font-weight: 400;
+
+      font-size: 4rem;
+      line-height: 5.4rem;
+      color: var(--font-color-primary);
+
+      @include tablet {
+        font-size: 6rem;
+        line-height: 7.4rem;
+      }
+
+      @include laptop {
+        font-size: 8rem;
+        font-weight: 500;
+        line-height: 9.4rem;
+      }
+    }
+
+    &__text {
+      margin-bottom: 3rem;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      font-weight: 300;
+    }
+  }
+
+  &__buttons_container {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  &__image_wrapper {
+    grid-row: 1/2;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.2/1;
+
+    @include tablet {
+      grid-row: 1/1;
+    }
+  }
+}

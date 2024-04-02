@@ -1,0 +1,8 @@
+.home {
+  display: grid;
+  gap: 4rem;
+
+  @include tablet {
+    gap: 14rem;
+  }
+}

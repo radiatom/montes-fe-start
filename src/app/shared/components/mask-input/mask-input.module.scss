@@ -1,0 +1,7 @@
+.mask_input {
+  &__label {
+    & span {
+      color: red;
+    }
+  }
+}

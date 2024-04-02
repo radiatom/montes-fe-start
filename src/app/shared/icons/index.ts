@@ -1,0 +1,6 @@
+export { default as IconDomino } from './domino.svg'
+export { default as IconVisible } from './eye.svg'
+export { default as IconInvisible } from './eye-slash.svg'
+export { default as IcoLogo } from './logo.svg'
+export { default as IcoVerctorLeft } from './Vector-left.svg'
+export { default as IcoVerctorRight } from './Vector-right.svg'

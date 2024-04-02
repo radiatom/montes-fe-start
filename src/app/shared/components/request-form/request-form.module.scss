@@ -1,0 +1,15 @@
+.request_form {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 2rem;
+
+  @include tablet {
+    grid-gap: 4.8rem;
+  }
+
+  &__label {
+    & span {
+      color: red;
+    }
+  }
+}

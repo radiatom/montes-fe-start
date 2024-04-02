@@ -1,0 +1,42 @@
+.lang_select {
+  position: relative;
+  width: 7rem;
+  padding: 0.6rem 1.2rem;
+  display: flex;
+  align-items: center;
+
+  line-height: 2.4rem;
+  cursor: pointer;
+  transition: color var(--transition);
+
+  & svg {
+    transition: transform var(--transition);
+  }
+
+  @include hover {
+    color: var(--font-color-bright-red);
+  }
+
+  &.mobile {
+    border: 1px solid var(--font-color-light-grey);
+    border-radius: 0.8rem;
+  }
+
+  &.expanded {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    background-color: var(--font-color-secondary);
+    color: var(--font-color-orange);
+
+    & svg {
+      transform: rotate(180deg);
+    }
+
+    &.mobile {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-color: var(--bg-color-secondary);
+      background-color: var(--bg-color-secondary);
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.header {
+  display: grid;
+  //align-items: center;
+  //grid-template-columns: 15rem auto;
+  grid-template-columns: 15rem 1fr auto;
+  height: 100%;
+  //margin-top: 4rem;
+  //margin-bottom: 4rem;
+
+  @include laptop {
+    //height: var(--header-height);
+    grid-template-columns: 15rem 1fr auto;
+  }
+
+  &__logo {
+    position: relative;
+    &__disabled {
+      pointer-events: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+
+    @include laptop {
+      display: flex;
+    }
+
+    &__item {
+      color: var(--font-color-dark-grey);
+      line-height: 1.8rem;
+      text-transform: uppercase;
+      transition: var(--transition);
+
+      &__active {
+        color: var(--font-color-bright-red);
+      }
+
+      @include hover {
+        color: var(--font-color-bright-red);
+      }
+    }
+  }
+
+  &__right {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    justify-items: flex-end;
+
+    @include tablet {
+      gap: 3rem;
+    }
+  }
+
+  &__side_menu {
+    display: flex;
+    margin: auto 0;
+
+    @include laptop {
+      display: none;
+    }
+  }
+}
